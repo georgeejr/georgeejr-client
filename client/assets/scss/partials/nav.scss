@@ -1,0 +1,22 @@
+.menu {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     color: #fff;
+     padding: 20px 0; 
+     ul{
+          text-align:center;
+          width: 100%;
+          float: left;
+          margin: 0; 
+          li{
+               display: inline-block;
+               padding: 0 3%;
+               font-family: 'Catamaran', sans-serif;
+               img.logo {
+                    width: 160px;
+               }
+          }
+     }
+}

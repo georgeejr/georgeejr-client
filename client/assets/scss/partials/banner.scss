@@ -1,0 +1,25 @@
+.banner{
+     height: 100vh;
+     background-image: url("../img/banner2.jpg");
+     background-size: cover; 
+     position: relative;
+     .titles {
+          text-align: center;
+          font-family: 'Catamaran', sans-serif;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+           h1{
+               font-size: 60px;
+               color: #fff;
+          }
+          h3{
+               font-family: 'Questrial', sans-serif;
+               color: #fff;
+          }
+     }
+    
+}
+ 
