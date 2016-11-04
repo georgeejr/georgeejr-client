@@ -5,6 +5,7 @@
      right: 0;
      color: #fff;
      padding: 20px 0; 
+     background: rgba(100,100,100, .1);
      ul{
           text-align:center;
           width: 100%;
@@ -16,6 +17,9 @@
                font-family: 'Catamaran', sans-serif;
                img.logo {
                     width: 160px;
+               }
+               a{
+                    color:#fff;
                }
           }
      }
