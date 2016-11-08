@@ -43,9 +43,8 @@ var paths = {
     'bower_components/foundation-apps/js/vendor/**/*.js',
     'bower_components/foundation-apps/js/angular/**/*.js',
     '!bower_components/foundation-apps/js/angular/app.js',
-    'bower_components/angular/angular.js',
-    'bower_components/angular-scroll/angular-scroll.js',
-    'bower_components/ng-parallax/angular-parallax.js',
+    'bower_components/angular/angular.js', 
+    'bower_components/ng-simple-parallax/src/ngParallax.js',
     'bower_components/angular-svg-round-progressbar/build/roundProgress.js'
     
   ],
