@@ -4,8 +4,5 @@ url: /
 ---
 
 
-<div ng-include="'partials/banner.html'"></div>
-
-<div class="grid-container">
- 
-</div>
+<section ng-include="'partials/banner.html'" ng-controller="bannerCtrl as vm"></section>
+<section id ="about" ng-include="'partials/about.html'" ng-controller="aboutCtrl as vm"></section>

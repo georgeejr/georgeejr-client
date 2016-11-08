@@ -136,7 +136,7 @@
 // - - - - - - - - - - - - - - -
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+ $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: $font-weight-normal;
 // $header-font-color: #222;
@@ -175,7 +175,7 @@
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
+ $paragraph-font-size: 0.6rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -233,10 +233,10 @@
 // 5. Grid
 // - - - - - - - - - - - - - - -
 
-// $container-width: rem-calc(900);
-// $block-padding: $global-padding;
-// $total-columns: 12;
-// $block-grid-max-size: 6; 
+ $container-width: rem-calc(900);
+ $block-padding: $global-padding;
+ $total-columns: 12;
+ $block-grid-max-size: 6; 
 
 // 6. Button
 // - - - - - - - - - - - - - - -
@@ -609,6 +609,12 @@
 }
 .grid-content {
      padding: 0;
+     .grid-block{
+          margin: 0;
+          .grid-block{
+               padding:1rem;
+          }
+     }
 }
 li{
      list-style: none;

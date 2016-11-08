@@ -13,13 +13,18 @@
           margin: 0; 
           li{
                display: inline-block;
-               padding: 0 3%;
+               width: 110px;
                font-family: 'Catamaran', sans-serif;
+               font-size:1rem;
                img.logo {
                     width: 160px;
                }
                a{
                     color:#fff;
+               }
+               &:nth-child(3){
+                    width:160px;
+                    margin-bottom: -47px;
                }
           }
      }

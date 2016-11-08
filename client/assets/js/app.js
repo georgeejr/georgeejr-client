@@ -8,7 +8,8 @@
     'foundation',
     'foundation.dynamicRouting',
     'foundation.dynamicRouting.animations',
-    'parallAx'
+    'angular-svg-round-progressbar',
+    
   ])
     .config(config)
     .run(run)

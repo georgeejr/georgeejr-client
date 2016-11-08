@@ -28,6 +28,7 @@ var paths = {
   // Sass will check these folders for files when you use @import.
   sass: [
     'client/assets/scss',
+    'client/assets/scss/partials',
     'bower_components/foundation-apps/scss'
   ],
   // These files include Foundation for Apps and its dependencies
@@ -45,12 +46,15 @@ var paths = {
     'bower_components/angular/angular.js',
     'bower_components/angular-scroll/angular-scroll.js',
     'bower_components/ng-parallax/angular-parallax.js',
+    'bower_components/angular-svg-round-progressbar/build/roundProgress.js'
     
   ],
   // These files are for your app's JavaScript
   appJS: [
     'client/assets/js/app.js',
-    'client/assets/js/parallax.js'
+    'client/assets/js/banner.js',
+    'client/assets/js/about.js',
+    'client/assets/js/onScroll.js'
     
     
   ]
