@@ -1,5 +1,5 @@
 .banner{
-     height: 96vh;
+     height: 100vh;
      //background-image: url("../img/banner2.jpg");
      //background-size: cover; 
      position: relative;
@@ -19,6 +19,12 @@
           h3{
                font-family: 'Questrial', sans-serif;
                color: #fff;
+          }
+          .button {
+             margin: 0;
+             &:hover { 
+                background-color: rgba(255,255,255,0.1) ;
+             }
           }
      }
     

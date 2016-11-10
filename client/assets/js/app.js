@@ -9,7 +9,8 @@
     'foundation.dynamicRouting',
     'foundation.dynamicRouting.animations',
     'ngParallax',
-    'angular-svg-round-progressbar' 
+    'angular-svg-round-progressbar'
+    
     
   ])
     .config(config)

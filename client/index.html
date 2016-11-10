@@ -13,17 +13,50 @@
 
   </head>
   <body>
-
-    <div class="grid-frame vertical">
-      <div class="grid-content shrink" style="padding: 0;">
-        <!--<ul class="primary condense menu-bar">
-          <li></li>
-        </ul>-->
+ 
+  <section class="banner grid-content" ng-controller="bannerCtrl as vm">
+      <div ng-parallax pattern="'assets/img/banner2.jpg'" speed="20" reverse="false"> 
+            <div class="titles">
+                <h1>{{vm.name}}</h1>
+                <h3>{{vm.title}}</h3>
+                <a class="secondary hollow large button" href="#">Under Construction</a>
+            </div>
+            <div class="menu">
+                <ul>
+                      <li><a href="">ABOUT</a></li>
+                      <li><a href="">WORK</a></li>
+                      <li><a href=""><img src="assets/img/logo.png" alt="george logo" class="logo"></a></li>
+                      <li><a href="">SERVICES</a></li>
+                      <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
       </div>
-      <div ui-view class="grid-content">
-      </div>
-    </div>
-
+  </section>
+  
+  <section scroll class="about grid-content" ng-controller="aboutCtrl as vm">
+      <h4>ABOUT</h4>
+      <div class="grid-container">
+            <div class="grid-block">
+                <div class="medium-12 grid-block" >
+                      <p class="text-center">My name is George Elluranggo Jr, I'm a Front End Web/App Developer from Manila, Philippines. My job is my biggest passion (this is really cool, don't you think?). <br> I love design and develop web sites because I think that this is a beatiful way to express creativity and communicate with people all over the world. I love to write beatiful code because this is fu****g fun! Every day I try to discover new ways of development and new ways to improve my skills: coding is my life!</p>
+                </div>
+                <h4 >TECHNOLOGIES</h4>
+                <div class="medium-12 grid-block small-up-5 skills" >
+                      <div class="grid-block align-center" ng-repeat="skill in skillsJson">
+                          <round-progress  max="100" current="skill.current" color="{{skill.color}}" bgcolor="{{skill.bgcolor}}" radius="70" stroke="15" duration="800" animation="easeInOutQuart" animation-delay="100"></round-progress>
+                          <img src="{{skill.imgSrc}}" alt="">
+                          <h5>{{skill.name}}</h5>
+                      </div>
+                </div>
+            </div>
+            <div class="grid-block align-center twitter-feed">
+                <a href="https://twitter.com/geekgeorgejr" target="_blank"><img src="http://am-pm.co.uk/wp-content/uploads/2011/02/twitter-icon.gif" alt=""></a>
+                <div class="grid-block medium-12 align-center">
+                      <p>"Javascript (and Node.js) Continues To Eat The World" by <a href="https://t.co/xlzDMzJzwD" target="_blank" class="twitter-atreply pretty-link js-nav" dir="ltr" data-mentioned-user-id="26053759">@<strong>DaleKnauss</strong></p>
+                </div>
+            </div>
+      </div> 
+  </section>
     
   </body>
 </html>

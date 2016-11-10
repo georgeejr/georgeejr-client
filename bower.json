@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "angular-svg-round-progressbar": "^0.4.8",
-    "ng-simple-parallax": "*"
+    "ng-simple-parallax": "*",
+    "jquery": "^3.1.1"
   }
 }

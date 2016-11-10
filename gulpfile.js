@@ -14,7 +14,7 @@ var sequence = require('run-sequence');
 var panini = require('panini');
 // Check for --production flag
 var isProduction = !!(argv.production);
-var isProduction = true;
+//var isProduction = true;
 
 // 2. FILE PATHS
 // - - - - - - - - - - - - - - -
@@ -45,7 +45,8 @@ var paths = {
     '!bower_components/foundation-apps/js/angular/app.js',
     'bower_components/angular/angular.js', 
     'bower_components/ng-simple-parallax/src/ngParallax.js',
-    'bower_components/angular-svg-round-progressbar/build/roundProgress.js'
+    'bower_components/angular-svg-round-progressbar/build/roundProgress.js',
+    'bower_components/jquery/dist/jquery.js'
     
   ],
   // These files are for your app's JavaScript

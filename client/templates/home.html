@@ -4,5 +4,66 @@ url: /
 ---
 
 
-<section ng-include="'partials/banner.html'" ng-controller="bannerCtrl as vm"></section>
-<section id ="about" ng-include="'partials/about.html'" ng-controller="aboutCtrl as vm"></section>
+<!--<section ng-include="'partials/banner.html'" ng-controller="bannerCtrl as vm"></section>
+<section id ="about" ng-include="'partials/about.html'" ng-controller="aboutCtrl as vm"></section>-->
+
+<div class="banner" ng-controller="bannerCtrl as vm">
+     <div ng-parallax pattern="'assets/img/banner2.jpg'" speed="5" reverse="true"> 
+          <div class="titles">
+               <h1>{{vm.name}}</h1>
+               <h3>{{vm.title}}</h3>
+          </div>
+          <div class="menu">
+               <ul>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">WORK</a></li>
+                    <li><a href=""><img src="assets/img/logo.png" alt="george logo" class="logo"></a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">CONTACT</a></li>
+               </ul>
+          </div>
+
+     </div>
+</div>
+ 
+<div scroll class="about" ng-controller="aboutCtrl as vm">
+     <h3>ABOUT</h3>
+     <div class="grid-container">
+          <div class="grid-block">
+               <div class="medium-12 grid-block" >
+                    <p class="text-center">My name is George Elluranggo Jr, I'm a Front End Web/App Developer from Manila, Philippines. My job is my biggest passion (this is really cool, don't you think?). <br> I love design and develop web sites because I think that this is a beatiful way to express creativity and communicate with people all over the world. I love to write beatiful code because this is fu****g fun! Every day I try to discover new ways of development and new ways to improve my skills: coding is my life!</p>
+               </div>
+               <div class="medium-12 grid-block skills">
+                    <div class="grid-block align-center">
+                         <round-progress  max="100" current="vm.skillHtml" color="#45ccce" bgcolor="#eaeaea" radius="70" stroke="15" duration="800" animation="easeInOutQuart" animation-delay="100"></round-progress>
+                         <img src="http://img04.deviantart.net/7cad/i/2011/018/5/b/psd_of_html5_logo_by_tobrother-d37hlwk.png" alt="">
+                         <h5>HTML5</h5>
+                    </div>
+                    <div class="grid-block align-center">
+                         <round-progress  max="100" current="vm.skillHtml" color="#45ccce" bgcolor="#eaeaea" radius="70" stroke="15" duration="800" animation="easeInOutQuart" animation-delay="100"></round-progress>
+                         <h5>CSS3</h5>
+                    </div>
+                    <div class="grid-block align-center">
+                         <round-progress  max="100" current="vm.skillHtml" color="#45ccce" bgcolor="#eaeaea" radius="70" stroke="15" duration="800" animation="easeInOutQuart" animation-delay="100"></round-progress>
+                         <h5>AngularJs</h5>
+                    </div>
+                    <div class="grid-block align-center">
+                         <round-progress  max="100" current="vm.skillHtml" color="#45ccce" bgcolor="#eaeaea" radius="70" stroke="15" duration="800" animation="easeInOutQuart" animation-delay="100"></round-progress>
+                         <h5>jQuery</h5>
+                    </div>
+                    <div class="grid-block align-center">
+                         <round-progress  max="100" current="vm.skillHtml" color="#45ccce" bgcolor="#eaeaea" radius="70" stroke="15" duration="800" animation="easeInOutQuart" animation-delay="100"></round-progress>
+                         <h5>gulp</h5>
+                    </div>
+                    
+               </div>
+          </div>
+          <div class="grid-block align-center twitter-feed">
+               <img src="http://am-pm.co.uk/wp-content/uploads/2011/02/twitter-icon.gif" alt="">
+               <div class="grid-block medium-12 align-center">
+                     <p>"Javascript (and Node.js) Continues To Eat The World" by <a href="https://t.co/xlzDMzJzwD" target="_blank" class="twitter-atreply pretty-link js-nav" dir="ltr" data-mentioned-user-id="26053759">@<strong>DaleKnauss</strong></p>
+               </div>
+          </div>
+     </div> 
+     
+</div>
