@@ -1,13 +1,13 @@
 (function () {
     'use strict';
     angular.module('georgeApp')
-    .controller("aboutCtrl", ['$scope', skillSet]);
+    .controller("aboutCtrl", ['$scope', aboutCtrl]);
 
-    function aboutCtrl() {        
+    function aboutCtrl($scope) {        
         var vm = this; 
-
-        //global settings
-        vm.skillHtml = '10'; 
+        vm.aboutMe = "My name is George Elluranggo Jr, I'm a Front End Web/App Developer from Manila, Philippines. My job is my biggest passion (this is really cool, don't you think?). <br> I love design and develop web sites because I think that this is a beatiful way to express creativity and communicate with people all over the world. I love to write beatiful code because this is fu****g fun! Every day I try to discover new ways of development and new ways to improve my skills: coding is my life!";
+        skillSet($scope);
+ 
     }
     function skillSet($scope){
          $scope.skillsJson = [ 

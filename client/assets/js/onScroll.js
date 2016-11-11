@@ -1,9 +1,8 @@
 (function () {
     'use strict';
-    $(document).ready(function(){
-   
- 
+    angular.module('georgeApp')
+    .controller('myCtrl', function($scope,$document){ 
+       
     });
-  
 
-})(jQuery);
+})();

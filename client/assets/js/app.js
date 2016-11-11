@@ -13,7 +13,7 @@
     
     
   ])
-    .config(config)
+    //.config(config)
     .run(run)
     
   ;
